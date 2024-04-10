@@ -1,0 +1,205 @@
+.la-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.la-modal-content {
+    background: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
+	color: #FFF !important;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.la-modal-content a {
+    color: #F2A900 !important;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    word-wrap: break-word; /* Break the words to prevent overflow */
+    overflow-wrap: break-word; /* Ensures that long strings of text will wrap and not overflow */
+    white-space: normal; /* Allows the text to wrap as needed */
+    display: block; /* Block display to allow the use of margin and padding for positioning */
+    margin: 0 auto; /* Center the link horizontally if it's less than the container width */ 
+}
+
+.la-modal-content a:hover,
+.la-modal-content a:focus {
+    color: #FF4500; 
+    text-decoration: underline; 
+}
+
+/* Ensure that the modal content is scrollable on small screens */
+@media (max-width: 480px) {
+    .la-modal-content {
+        width: 90%; /* Slightly increase the width to give more room for the text */
+        max-width: none; /* Remove max-width to allow the modal to be responsive */
+        overflow-y: auto; /* Allow vertical scrolling if the content is too tall */
+    }
+}
+
+.la-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.la-modal-content .la-start-quiz {
+    background-color: #FF9900; /* Original button background color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Fade effect for background color and text color */
+}
+
+.la-modal-content .la-start-quiz:hover,
+.la-modal-content .la-start-quiz:focus {
+    background-color: #FF4500; /* Slightly darker color for hover/focus to provide feedback */
+    color: #F2A900; /* Yellow text color for contrast */
+}
+
+.la-modal-content .la-powered-by {
+    text-align: center; /* Center-align the text */
+    margin-top: 20px; /* Add some space above the line */
+    font-size: 0.8em; /* Smaller font size for the attribution text */
+    color: #aaa; /* Grey color for the text */
+}
+
+.la-modal-content .la-powered-link {
+    color: #F2A900; /* Yellow color for the hyperlink */
+    text-decoration: none; /* No underline by default */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.la-modal-content .la-powered-link:hover,
+.la-modal-content .la-powered-link:focus {
+    color: #FF4500; /* Slightly darker yellow for hover/focus to provide feedback */
+    text-decoration: underline; /* Adds underline on hover/focus */
+}
+
+/* Styles for steps indicator modal */
+.steps-indicator .step {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff; /* White background for steps */
+    color: #333; /* Dark text for readability */
+}
+
+/* Matching the close button style to previous modals */
+#close-steps-modal {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#close-steps-modal:hover, #close-steps-modal:focus {
+    background-color: #FF4500;
+    color: #F2A900;
+}
+
+
+.bitc_input_label {
+    font-size: 150%;
+    display: block; /* Makes label display as block, which can help with spacing */
+    margin-bottom: 10px; /* Spacing between label and input */
+    color: #FF4500;
+}
+
+.bitc_lightning_input {
+    padding: 0.8rem;
+    font-size: 1.2em;
+    width: 100%;
+    color: #2d2d2d;
+    border-bottom: 1px dashed #aaa;
+    line-height: inherit;
+    height: auto;
+    cursor: initial;
+    margin-bottom: 15px; /* Spacing between input and button */
+}
+
+/* Pulsing animation for the save button */
+@keyframes pulseAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.10); }
+    100% { transform: scale(1); }
+}
+
+.bitc_button {
+    animation: pulseAnimation 2s infinite;
+    margin: 10px 0; /* Adjust margin to center the button */
+    padding: 10px 20px;
+    background-color: #FF9900 !important;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    width: auto; /* Default width */
+    max-width: 200px; /* Maximum width for large screens */
+    display: block; /* Make the button a block element to fill the container width */
+    text-align: center; /* Center the text inside the button */
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) { /* For tablets */
+    .bitc_button {
+        max-width: 180px;
+        padding: 10px 15px; /* Slightly smaller padding */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    .bitc_button {
+        max-width: 160px;
+        padding: 8px 10px; /* Even smaller padding for small screens */
+    }
+}
+
+
+.bitc_button:hover {
+    background-color: #E85D04; /* Darker shade for button hover state */
+}
+
+.bitc_input_container {
+    background: #f0f0f0; /* Light gray background for the container */
+    padding: 20px;
+    border: 1px solid #ddd; /* Lighter border for a subtle effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1); /* Softer shadow for the input container */
+    border-radius: 5px; /* Rounded corners for the container */
+    margin-bottom: 20px; /* Space below the container */
+}
+
+.bitc_row {
+    margin-bottom: 20px; /* Space below each row if needed */
+}
+
+.bitc_disclaimer {
+    font-size: 0.8em; /* Smaller font size for the disclaimer text */
+    color: #666; /* Grey color for the disclaimer text */
+    margin-top: 10px; /* Space above the disclaimer text */
+    margin-bottom: 20px; /* Space below the disclaimer text */
+}
