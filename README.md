@@ -6,7 +6,7 @@
 ## 2. Current Functionality
 **Note that this is still actively being developed and should be considered ALPHA software.  Please use with caution and report any bugs!**
 
-- **Overall**: This plugin is completely functional and can currently be implemented on any WordPress site by downloading a zip file of this source code. 
+- **Overall**: This plugin is completely functional and can currently be implemented on any WordPress site by downloading a zip file of this source code.
 
 - **Database**: Custom WordPress table for storing quiz and survey.
 
@@ -45,7 +45,7 @@
 - **Theme**: This has been tested on a variety of themes.
 
 ## 10. Feedback and User Insights
-- **Current Status**: We have received reqests to make it easy for a user to sign up for a Lightning Address if they don't already have one.  We have also receive many requests to host quizzes on behalf of users.  These functionalities are currently being explored. 
+- **Current Status**: We have received reqests to make it easy for a user to sign up for a Lightning Address if they don't already have one.  We have also receive many requests to host quizzes on behalf of users.  These functionalities are currently being explored.
 
 ## 11. Future Plans and Features
 - **Monetization**: Implement payment splits for self-hosted plugins that will help fund maintenance and further development.  Implement a custom website that makes hosted quizzes and surveys easy to configure in exchange for bitcoin.
@@ -54,4 +54,4 @@
 
 - **Feedback and Iteration**: Using our self-hostedd surveys to gather post-deployment feedback collection for improvements.
 
-- **Additional Integrations**: Plans to include JoltzRewards API when they have Lightning Address functionality available.  Researching additional integration that will allow our users to easily generate a Lightning Address.
+- **Additional Integrations**: Plans to include JoltzRewards API when they have Lightning Address functionality available.  Researching additional integration that will allow our users to easily generate a Lightning Address
